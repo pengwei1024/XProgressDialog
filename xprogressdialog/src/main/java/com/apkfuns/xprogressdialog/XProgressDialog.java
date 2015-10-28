@@ -62,6 +62,7 @@ public class XProgressDialog extends AlertDialog {
         if (message != null && !TextUtils.isEmpty(messageText)) {
             message.setText(messageText);
         }
+        getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         setCanceledOnTouchOutside(false);
         setCancelable(false);
     }
@@ -92,12 +93,12 @@ public class XProgressDialog extends AlertDialog {
     public void show() {
         super.show();
         if (progressBar instanceof HeartProgressView) {
-            new Handler().postDelayed(new Runnable() {
+            progressBar.post(new Runnable() {
                 @Override
                 public void run() {
                     ((HeartProgressView) progressBar).start();
                 }
-            }, 100);
+            });
         }
     }
 }

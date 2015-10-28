@@ -23,7 +23,7 @@ dialog.show();
 
 ### Gradle导入
 ```groovy
-compile 'com.apkfuns.xprogressdialog:xprogressdialog:1.0.0'
+compile 'com.apkfuns.xprogressdialog:xprogressdialog:1.1.0'
 ```
 
 
