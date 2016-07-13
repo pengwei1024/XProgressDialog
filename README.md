@@ -15,15 +15,18 @@ XProgressDialog dialog = new XProgressDialog(this, "正在加载..", XProgressDi
 dialog.show();
 ```
 #### 三种样式
-```xml
-1. XProgressDialog.THEME_HORIZONTAL_SPOT (默认样式)
-2. XProgressDialog.THEME_CIRCLE_PROGRESS
-3. XProgressDialog.THEME_HEART_PROGRESS
-```
+-  XProgressDialog.THEME_HORIZONTAL_SPOT (默认样式)
+-  XProgressDialog.THEME_CIRCLE_PROGRESS
+-  XProgressDialog.THEME_HEART_PROGRESS
 
 ### Gradle导入
 ```groovy
-compile 'com.apkfuns.xprogressdialog:xprogressdialog:1.1.0'
+compile 'com.apkfuns.xprogressdialog:xprogressdialog:1.2.0'
+```
+
+### proguard
+```
+-keep class com.apkfuns.xprogressdialog.**{*;}
 ```
 
 
@@ -33,7 +36,7 @@ compile 'com.apkfuns.xprogressdialog:xprogressdialog:1.1.0'
 
 ### License
 <pre>
-Copyright 2015 Orhan Obut
+Copyright 2015 pengwei1024
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

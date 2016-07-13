@@ -11,7 +11,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        XProgressDialog dialog = new XProgressDialog(this, "正在加载..", XProgressDialog.THEME_CIRCLE_PROGRESS);
+        XProgressDialog dialog = new XProgressDialog(this, "正在加载正在加载正在加载正在加载..", XProgressDialog.THEME_HEART_PROGRESS);
+        dialog.setMessage("1232123213");
         dialog.show();
     }
 }

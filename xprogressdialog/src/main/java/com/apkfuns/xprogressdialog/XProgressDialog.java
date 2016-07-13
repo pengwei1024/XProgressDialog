@@ -29,7 +29,7 @@ public class XProgressDialog extends AlertDialog {
 
     public XProgressDialog(Context context, String message) {
         super(context);
-        messageText = message;
+        this.messageText = message;
     }
 
     public XProgressDialog(Context context, int theme) {
@@ -39,7 +39,7 @@ public class XProgressDialog extends AlertDialog {
 
     public XProgressDialog(Context context, String message, int theme) {
         super(context);
-        messageText = message;
+        this.messageText = message;
         this.theme = theme;
     }
 
@@ -68,7 +68,7 @@ public class XProgressDialog extends AlertDialog {
     }
 
     public void setMessage(String message) {
-        this.message.setText(message);
+        this.messageText = message;
     }
 
     /**

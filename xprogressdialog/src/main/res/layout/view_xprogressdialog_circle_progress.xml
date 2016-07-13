@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@drawable/dialog_bg"
+    android:background="@drawable/bg_dialog"
     android:layout_gravity="center_vertical|center_horizontal"
     android:minWidth="150dp">
     <ProgressBar
@@ -15,7 +15,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="@android:color/white"
+        style="@style/dialog_msg_text"
         android:maxLines="2"
-        android:maxWidth="200dp"/>
+        android:maxWidth="150dp"
+        android:layout_marginTop="5dp"/>
 </LinearLayout>

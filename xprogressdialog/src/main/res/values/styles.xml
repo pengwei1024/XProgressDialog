@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HeartProgressView">
+        <attr name="heartColor" format="color" />
+    </declare-styleable>
+
+
+    <dimen name="spot_progress_spot_size">6dp</dimen>
+    <dimen name="spot_progress_margin">24dp</dimen>
+    <dimen name="spot_progress_width">250dp</dimen>
+    <dimen name="padding_dialog_bg">12dp</dimen>
+
+
+    <style name="dialog_msg_text">
+        <item name="android:textColor">#C1C1C1</item>
+    </style>
+</resources>
